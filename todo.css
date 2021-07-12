@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#todolists{
+    max-width: 700px;
+}
+#add{
+    width: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#list{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* 元のチェックボックスの削除 */
+.checkbox-input{
+  display: none;
+}
+/* チェックボックスのスタイル */
+.checkbox-parts{
+  padding-left: 30px;
+  position:relative;
+  margin-right: 20px;
+}
+.checkbox-parts::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+.checkbox-input:checked + .checkbox-parts{
+  opacity: 0.8;
+}
+.checkbox-input:checked + .checkbox-parts::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 6px;
+  width: 8px;
+  height: 20px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #1e90ff;
+  border-right: 3px solid #1e90ff;
+}
+
+/* ゴミ箱マーク */
+.trash {
+    padding: 3px;
+  }
+  .trash:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
