@@ -13,6 +13,12 @@
     margin: 0 auto;
 }
 
+.rateElement p{
+  font-size:1.2rem;
+  margin: 30px;
+  text-align: center;
+}
+
 /* 元のチェックボックスの削除 */
 .checkbox-input{
   display: none;
